@@ -1,0 +1,33 @@
+extend schema
+@link(
+    url: "https://specs.apollo.dev/federation/v2.3",
+    import: [
+        "@composeDirective",
+        "@extends",
+        "@external",
+        "@inaccessible",
+        "@interfaceObject",
+        "@key",
+        "@override",
+        "@provides",
+        "@requires",
+        "@shareable",
+        "@tag"
+    ]
+)
+
+type Product @key(fields: "id") @extends{
+    id: ID @external
+    reviews: [Review]
+}
+
+type Review {
+    id: ID,
+    text: String
+    starRating: Int
+    #???position: Position
+}
+
+
+
+

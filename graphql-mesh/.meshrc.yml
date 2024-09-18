@@ -1,0 +1,26 @@
+sources:
+  - name: products
+    handler:
+      graphql:
+        endpoint: http://localhost:8080/graphql
+  - name: reviews1
+    handler:
+      graphql:
+        endpoint: http://localhost:8081/graphql
+#  - name: books
+#    handler:
+#      graphql:
+#        endpoint: http://localhost:8085/graphql
+#  - name: reviews2
+#    handler:
+#      graphql:
+#        endpoint: http://localhost:8086/graphql
+
+#  - example-query.graphql
+
+serve:
+  playground: true
+
+#plugins:
+#  - hive:
+#      token: '{env.HIVE_TOKEN}'

@@ -1,0 +1,17 @@
+{
+  "name": "graphql-mesh-gateway",
+  "version": "0.0.1",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "build": "mesh build",
+    "dev": "mesh dev",
+    "start": "mesh start",
+    "validate": "mesh validate"
+  },
+  "dependencies": {
+    "@graphql-mesh/cli": "^0.82.24",
+    "@graphql-mesh/graphql": "^0.34.7",
+    "graphql": "^16.3.0"
+  }
+}
